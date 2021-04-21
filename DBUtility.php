@@ -164,9 +164,15 @@ class DBUtility {
   }
 
   // Upload a file
-  public function uploadFile($sql, $data, $inputName, $maxSize, $accept, $bool, $fileLoc) {
+  public function uploadFile($sql, $data, $fileData) {
 
     if($data['name'] === 'default'){
+
+      $inputName = $fileData['inputName'];
+      $maxSize = $fileData['maxSize'];
+      $accept = $fileData['accept'];
+      $bool = $fileData['bool'];
+      $fileLoc = $fileData['fileLoc'];
 
       if(isset($_FILES[$inputName]['name'])){
 

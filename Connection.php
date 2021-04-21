@@ -1,9 +1,9 @@
 <?php
 
 // Change Connection Here
-define('HOST', 'host_name');
-define('DBNAME', 'database_name');
-define('USER', 'username');
-define('PASS', 'password');
+define('HOST', '127.0.0.1:8889');
+define('DBNAME', 'practice_db');
+define('USER', 'root');
+define('PASS', 'root');
 
 ?>
